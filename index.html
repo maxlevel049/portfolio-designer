@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndrewDesigner | Design Gráfico Criativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="maracuja-loader">
+                <div class="fruit"></div>
+                <div class="splash splash-1"></div>
+                <div class="splash splash-2"></div>
+                <div class="splash splash-3"></div>
+            </div>
+            <p class="loader-text" data-pt="Preparando o suco..." data-en="Preparing the juice...">Preparando o suco...</p>
+        </div>
+    </div>
+
+    <!-- PARTICLES -->
+    <div id="particles"></div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🍋</span>
+                <span class="logo-text">ENDREW<span class="highlight">DESIGNER</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-pt="Início" data-en="Home">Início</a></li>
+                <li><a href="#sobre" class="nav-link" data-pt="Quem Sou" data-en="About">Quem Sou</a></li>
+                <li><a href="#servicos" class="nav-link" data-pt="Serviços" data-en="Services">Serviços</a></li>
+                <li><a href="#portfolio" class="nav-link" data-pt="Portfólio" data-en="Portfolio">Portfólio</a></li>
+                <li><a href="#contato" class="nav-link" data-pt="Contato" data-en="Contact">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="theme-toggle" id="themeToggle" title="Trocar tema">
+                    <span class="theme-icon" id="themeIcon">🍋</span>
+                    <span class="theme-label" id="themeLabel">Maracujá</span>
+                </div>
+                <div class="lang-toggle" id="langToggle" title="Switch Language">
+                    <span class="lang-flag" id="langFlag">🇧🇷</span>
+                    <span class="lang-label" id="langLabel">PT</span>
+                </div>
+                <a href="https://wa.me/5511995630759?text=Ola%20Endrew!%20Vim%20pelo%20seu%20portfolio%20e%20gostaria%20de%20solicitar%20um%20orcamento." target="_blank" class="btn-nav">
+                    <i class="fab fa-whatsapp"></i> <span data-pt="Orçamento" data-en="Quote">Orçamento</span>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-links">
+            <li><a href="#home" class="mobile-link" data-pt="Início" data-en="Home">Início</a></li>
+            <li><a href="#sobre" class="mobile-link" data-pt="Quem Sou" data-en="About">Quem Sou</a></li>
+            <li><a href="#servicos" class="mobile-link" data-pt="Serviços" data-en="Services">Serviços</a></li>
+            <li><a href="#portfolio" class="mobile-link" data-pt="Portfólio" data-en="Portfolio">Portfólio</a></li>
+            <li><a href="#contato" class="mobile-link" data-pt="Contato" data-en="Contact">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-dot"></span>
+                <span data-pt="Disponível para novos projetos" data-en="Available for new projects">Disponível para novos projetos</span>
+            </div>
+            <h1 class="hero-title reveal-up">
+                <span data-pt="Design que" data-en="Design that">Design que</span><br>
+                <span class="title-highlight typed-text" id="typedText"></span>
+                <span class="cursor">|</span>
+            </h1>
+            <p class="hero-description reveal-up" data-pt="Transformo ideias em experiências visuais marcantes. Cada projeto é como um suco fresco — feito sob medida, com sabor único e impossível de esquecer." data-en="I turn ideas into striking visual experiences. Each project is like a fresh juice — tailor-made, with a unique flavor and impossible to forget.">
+                Transformo ideias em experiências visuais marcantes. 
+                Cada projeto é como um suco fresco — feito sob medida, 
+                com sabor único e impossível de esquecer.
+            </p>
+            <div class="hero-buttons reveal-up">
+                <a href="#portfolio" class="btn-primary">
+                    <i class="fas fa-play"></i>
+                    <span data-pt="Ver Projetos" data-en="View Projects">Ver Projetos</span>
+                </a>
+                <a href="https://wa.me/5511995630759?text=Ola%20Endrew!%20Vim%20pelo%20seu%20portfolio%20e%20quero%20saber%20mais%20sobre%20seus%20servicos." target="_blank" class="btn-secondary">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-pt="Fale Comigo" data-en="Talk to Me">Fale Comigo</span>
+                </a>
+            </div>
+            <div class="hero-stats reveal-up">
+                <div class="stat">
+                    <span class="stat-number" data-count="150">0</span>
+                    <span class="stat-label" data-pt="Projetos" data-en="Projects">Projetos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="98">0</span>
+                    <span class="stat-label" data-pt="Clientes Felizes" data-en="Happy Clients">Clientes Felizes</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label" data-pt="Anos de Exp." data-en="Years of Exp.">Anos de Exp.</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual reveal-right">
+            <div class="hero-card-stack">
+                <div class="floating-card card-1">
+                    <div class="card-mockup">
+                        <div class="mockup-bar">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-img"></div>
+                            <div class="mockup-lines">
+                                <div class="line w80"></div>
+                                <div class="line w60"></div>
+                                <div class="line w40"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-mockup palette">
+                        <div class="color-circle c1"></div>
+                        <div class="color-circle c2"></div>
+                        <div class="color-circle c3"></div>
+                        <div class="color-circle c4"></div>
+                    </div>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-pen-nib"></i>
+                    <span>Design</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span data-pt="Role para explorar" data-en="Scroll to explore">Role para explorar</span>
+        </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="section sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">🍋 <span data-pt="Conheça o artista" data-en="Meet the artist">Conheça o artista</span></span>
+                <h2 class="section-title reveal-up" data-pt="Quem Sou Eu" data-en="Who Am I">Quem Sou Eu</h2>
+                <div class="title-line reveal-up"></div>
+            </div>
+            <div class="sobre-grid">
+                <div class="sobre-image reveal-left">
+                    <div class="image-frame">
+                        <img src="imagens/endrew.jpg" alt="Endrew Designer" class="foto-perfil">
+                        <div class="frame-decoration frame-top-left"></div>
+                        <div class="frame-decoration frame-bottom-right"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text" data-pt="Anos de<br>Experiência" data-en="Years of<br>Experience">Anos de<br>Experiência</span>
+                    </div>
+                </div>
+                <div class="sobre-content reveal-right">
+                    <h3 class="sobre-subtitle">
+                        <span data-pt="Olá! Eu sou" data-en="Hi! I'm">Olá! Eu sou</span> <span class="highlight">EndrewDesigner</span> 👋
+                    </h3>
+                    <p class="sobre-text" data-pt="Sou designer gráfico apaixonado por criar identidades visuais que contam histórias. Assim como um bom maracujá — meu trabalho é <strong>vibrante, marcante e cheio de personalidade</strong>." data-en="I'm a graphic designer passionate about creating visual identities that tell stories. Just like a good passion fruit — my work is <strong>vibrant, striking and full of personality</strong>.">
+                        Sou designer gráfico apaixonado por criar identidades visuais 
+                        que contam histórias. Assim como um bom maracujá — meu trabalho 
+                        é <strong>vibrante, marcante e cheio de personalidade</strong>.
+                    </p>
+                    <p class="sobre-text" data-pt="Acredito que design não é só estética, é estratégia. Cada cor, cada forma e cada tipografia são escolhidas com propósito para fazer sua marca se destacar no mercado." data-en="I believe design is not just aesthetics, it's strategy. Every color, shape and typography is chosen with purpose to make your brand stand out in the market.">
+                        Acredito que design não é só estética, é estratégia. Cada cor, 
+                        cada forma e cada tipografia são escolhidas com propósito para 
+                        fazer sua marca se destacar no mercado.
+                    </p>
+                    <div class="skills-container">
+                        <h4 class="skills-title" data-pt="Minhas Habilidades" data-en="My Skills">Minhas Habilidades</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span data-pt="Identidade Visual" data-en="Visual Identity">Identidade Visual</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Social Media</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>UI/UX Design</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Motion Graphics</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools">
+                        <h4 class="skills-title" data-pt="Ferramentas" data-en="Tools">Ferramentas</h4>
+                        <div class="tools-grid">
+                            <div class="tool-item" title="Photoshop">
+                                <i class="fas fa-image"></i>
+                                <span>Photoshop</span>
+                            </div>
+                            <div class="tool-item" title="Illustrator">
+                                <i class="fas fa-pen-nib"></i>
+                                <span>Illustrator</span>
+                            </div>
+                            <div class="tool-item" title="CapCut">
+                                <i class="fas fa-scissors"></i>
+                                <span>CapCut</span>
+                            </div>
+                            <div class="tool-item" title="After Effects">
+                                <i class="fas fa-film"></i>
+                                <span>After Effects</span>
+                            </div>
+                            <div class="tool-item" title="Canva">
+                                <i class="fas fa-palette"></i>
+                                <span>Canva</span>
+                            </div>
+                            <div class="tool-item" title="Premiere Pro">
+                                <i class="fas fa-video"></i>
+                                <span>Premiere Pro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">🎨 <span data-pt="O que eu faço" data-en="What I do">O que eu faço</span></span>
+                <h2 class="section-title reveal-up" data-pt="Meus Serviços" data-en="My Services">Meus Serviços</h2>
+                <div class="title-line reveal-up"></div>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card reveal-up" style="--delay: 0.1s">
+                    <div class="servico-icon"><i class="fas fa-fingerprint"></i></div>
+                    <h3 data-pt="Identidade Visual" data-en="Visual Identity">Identidade Visual</h3>
+                    <p data-pt="Logotipos, paleta de cores, tipografia e todo o DNA visual da sua marca." data-en="Logos, color palette, typography and all the visual DNA of your brand.">Logotipos, paleta de cores, tipografia e todo o DNA visual da sua marca.</p>
+                    <div class="servico-hover-line"></div>
+                </div>
+                <div class="servico-card reveal-up" style="--delay: 0.2s">
+                    <div class="servico-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Social Media</h3>
+                    <p data-pt="Posts, stories, carrosséis e campanhas que engajam e convertem." data-en="Posts, stories, carousels and campaigns that engage and convert.">Posts, stories, carrosséis e campanhas que engajam e convertem.</p>
+                    <div class="servico-hover-line"></div>
+                </div>
+                <div class="servico-card reveal-up" style="--delay: 0.3s">
+                    <div class="servico-icon"><i class="fas fa-box-open"></i></div>
+                    <h3 data-pt="Embalagens" data-en="Packaging">Embalagens</h3>
+                    <p data-pt="Design de embalagens criativas que destacam seu produto na prateleira." data-en="Creative packaging design that makes your product stand out on the shelf.">Design de embalagens criativas que destacam seu produto na prateleira.</p>
+                    <div class="servico-hover-line"></div>
+                </div>
+                <div class="servico-card reveal-up" style="--delay: 0.4s">
+                    <div class="servico-icon"><i class="fas fa-print"></i></div>
+                    <h3 data-pt="Material Impresso" data-en="Print Material">Material Impresso</h3>
+                    <p data-pt="Cartões, folders, banners e tudo que sua empresa precisa offline." data-en="Business cards, folders, banners and everything your company needs offline.">Cartões, folders, banners e tudo que sua empresa precisa offline.</p>
+                    <div class="servico-hover-line"></div>
+                </div>
+                <div class="servico-card reveal-up" style="--delay: 0.5s">
+                    <div class="servico-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p data-pt="Interfaces bonitas e funcionais para sites e aplicativos." data-en="Beautiful and functional interfaces for websites and apps.">Interfaces bonitas e funcionais para sites e aplicativos.</p>
+                    <div class="servico-hover-line"></div>
+                </div>
+                <div class="servico-card reveal-up" style="--delay: 0.6s">
+                    <div class="servico-icon"><i class="fas fa-video"></i></div>
+                    <h3>Motion Graphics</h3>
+                    <p data-pt="Animações e vídeos que dão vida à sua comunicação visual." data-en="Animations and videos that bring your visual communication to life.">Animações e vídeos que dão vida à sua comunicação visual.</p>
+                    <div class="servico-hover-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">🎬 <span data-pt="Meus trabalhos" data-en="My work">Meus trabalhos</span></span>
+                <h2 class="section-title reveal-up" data-pt="Portfólio" data-en="Portfolio">Portfólio</h2>
+                <div class="title-line reveal-up"></div>
+                <p class="section-desc reveal-up" data-pt="Cada projeto é feito com dedicação, estratégia e aquele toque especial de maracujá 🍋" data-en="Each project is made with dedication, strategy and that special passion fruit touch 🍋">Cada projeto é feito com dedicação, estratégia e aquele toque especial de maracujá 🍋</p>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <!-- PROJETO 1 -->
+                <div class="juice-card reveal-up" style="--delay: 0.1s">
+                    <div class="juice-glow"></div>
+                    <div class="juice-image">
+                        <img src="imagens/hyochat.jpg" alt="HyoChat - AI Mentor de YouTube">
+                        <div class="juice-overlay">
+                            <div class="juice-overlay-content">
+                                <span class="juice-badge">Social Media</span>
+                                <h3>HyoChat</h3>
+                                <p data-pt="App de chat com IA mentor para YouTubers" data-en="AI mentor chat app for YouTubers">App de chat com IA mentor para YouTubers</p>
+                                <a href="https://wa.me/5511995630759?text=Ola%20Endrew!%20Vi%20o%20projeto%20HyoChat%20no%20seu%20portfolio%20e%20quero%20algo%20parecido!" target="_blank" class="juice-btn">
+                                    <i class="fab fa-whatsapp"></i> <span data-pt="Quero assim" data-en="I want this">Quero assim</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="juice-info">
+                        <h3>HyoChat — AI Mentor</h3>
+                        <p data-pt="Design de postagem para Instagram de um app de chat com inteligência artificial voltado para criadores de conteúdo e YouTubers que buscam um mentor IA para crescer no YouTube." data-en="Instagram post design for an AI chat app aimed at content creators and YouTubers looking for an AI mentor to grow on YouTube.">Design de postagem para Instagram de um app de chat com inteligência artificial voltado para criadores de conteúdo e YouTubers que buscam um mentor IA para crescer no YouTube.</p>
+                        <div class="juice-tags">
+                            <span><i class="fab fa-instagram"></i> Instagram</span>
+                            <span><i class="fas fa-robot"></i> Tech</span>
+                            <span><i class="fab fa-youtube"></i> YouTube</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJETO 2 -->
+                <div class="juice-card reveal-up" style="--delay: 0.2s">
+                    <div class="juice-glow"></div>
+                    <div class="juice-image">
+                        <img src="imagens/youtuber.jpg" alt="Design para YouTuber">
+                        <div class="juice-overlay">
+                            <div class="juice-overlay-content">
+                                <span class="juice-badge">Social Media</span>
+                                <h3 data-pt="Cliente YouTuber" data-en="YouTuber Client">Cliente YouTuber</h3>
+                                <p data-pt="Arte visual para criador de conteúdo" data-en="Visual art for content creator">Arte visual para criador de conteúdo</p>
+                                <a href="https://wa.me/5511995630759?text=Ola%20Endrew!%20Vi%20o%20projeto%20do%20YouTuber%20no%20seu%20portfolio%20e%20quero%20algo%20parecido!" target="_blank" class="juice-btn">
+                                    <i class="fab fa-whatsapp"></i> <span data-pt="Quero assim" data-en="I want this">Quero assim</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="juice-info">
+                        <h3 data-pt="Cliente YouTuber" data-en="YouTuber Client">Cliente YouTuber</h3>
+                        <p data-pt="Design completo para um criador de conteúdo do YouTube. Thumbnail, banner, identidade visual para redes sociais e materiais de divulgação que traduzem a energia e o estilo do canal." data-en="Complete design for a YouTube content creator. Thumbnail, banner, visual identity for social media and promotional materials that convey the channel's energy and style.">Design completo para um criador de conteúdo do YouTube. Thumbnail, banner, identidade visual para redes sociais e materiais de divulgação que traduzem a energia e o estilo do canal.</p>
+                        <div class="juice-tags">
+                            <span><i class="fab fa-youtube"></i> YouTube</span>
+                            <span><i class="fas fa-image"></i> Thumbnail</span>
+                            <span><i class="fas fa-paint-brush"></i> Banner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJETO 3 -->
+                <div class="juice-card reveal-up" style="--delay: 0.3s">
+                    <div class="juice-glow"></div>
+                    <div class="juice-image">
+                        <img src="imagens/acai.jpg" alt="Postagem Açaí">
+                        <div class="juice-overlay">
+                            <div class="juice-overlay-content">
+                                <span class="juice-badge">Social Media</span>
+                                <h3 data-pt="Loja de Açaí" data-en="Acai Shop">Loja de Açaí</h3>
+                                <p data-pt="Postagem irresistível para açaiteria" data-en="Irresistible post for acai shop">Postagem irresistível para açaiteria</p>
+                                <a href="https://wa.me/5511995630759?text=Ola%20Endrew!%20Vi%20o%20projeto%20do%20Acai%20no%20seu%20portfolio%20e%20quero%20algo%20parecido!" target="_blank" class="juice-btn">
+                                    <i class="fab fa-whatsapp"></i> <span data-pt="Quero assim" data-en="I want this">Quero assim</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="juice-info">
+                        <h3 data-pt="Loja de Açaí" data-en="Acai Shop">Loja de Açaí</h3>
+                        <p data-pt="Design de postagem para Instagram de uma loja de açaí. Visual vibrante e apetitoso que destaca o produto e atrai clientes, com cores e elementos que transmitem frescor e sabor." data-en="Instagram post design for an acai shop. Vibrant and appetizing visual that highlights the product and attracts customers, with colors and elements that convey freshness and flavor.">Design de postagem para Instagram de uma loja de açaí. Visual vibrante e apetitoso que destaca o produto e atrai clientes, com cores e elementos que transmitem frescor e sabor.</p>
+                        <div class="juice-tags">
+                            <span><i class="fab fa-instagram"></i> Instagram</span>
+                            <span><i class="fas fa-utensils"></i> Food</span>
+                            <span><i class="fas fa-bullhorn"></i> Promo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJETO 4 -->
+                <div class="juice-card reveal-up" style="--delay: 0.4s">
+                    <div class="juice-glow"></div>
+                    <div class="juice-image">
+                        <img src="imagens/academia.jpg" alt="Flyer Academia">
+                        <div class="juice-overlay">
+                            <div class="juice-overlay-content">
+                                <span class="juice-badge">Flyer</span>
+                                <h3 data-pt="Flyer Academia" data-en="Gym Flyer">Flyer Academia</h3>
+                                <p data-pt="Material promocional fitness" data-en="Fitness promotional material">Material promocional fitness</p>
+                                <a href="https://wa.me/5511995630759?text=Ola%20Endrew!%20Vi%20o%20Flyer%20de%20Academia%20no%20seu%20portfolio%20e%20quero%20algo%20parecido!" target="_blank" class="juice-btn">
+                                    <i class="fab fa-whatsapp"></i> <span data-pt="Quero assim" data-en="I want this">Quero assim</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="juice-info">
+                        <h3 data-pt="Flyer de Academia" data-en="Gym Flyer">Flyer de Academia</h3>
+                        <p data-pt="Flyer promocional impactante para academia. Design que transmite energia, força e motivação, perfeito para divulgação nas redes sociais e material impresso para atrair novos alunos." data-en="Impactful promotional flyer for gym. Design that conveys energy, strength and motivation, perfect for social media promotion and printed material to attract new members.">Flyer promocional impactante para academia. Design que transmite energia, força e motivação, perfeito para divulgação nas redes sociais e material impresso para atrair novos alunos.</p>
+                        <div class="juice-tags">
+                            <span><i class="fas fa-dumbbell"></i> Fitness</span>
+                            <span><i class="fas fa-print"></i> Flyer</span>
+                            <span><i class="fas fa-bullhorn"></i> Promo</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section processo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">⚡ <span data-pt="Como funciona" data-en="How it works">Como funciona</span></span>
+                <h2 class="section-title reveal-up" data-pt="Meu Processo Criativo" data-en="My Creative Process">Meu Processo Criativo</h2>
+                <div class="title-line reveal-up"></div>
+            </div>
+            <div class="processo-timeline">
+                <div class="processo-step reveal-up" style="--delay: 0.1s">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fas fa-comments"></i></div>
+                    <div class="step-content">
+                        <h3>Briefing</h3>
+                        <p data-pt="Entendo suas necessidades, objetivos e o DNA da sua marca." data-en="I understand your needs, goals and your brand's DNA.">Entendo suas necessidades, objetivos e o DNA da sua marca.</p>
+                    </div>
+                </div>
+                <div class="processo-step reveal-up" style="--delay: 0.2s">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <div class="step-content">
+                        <h3 data-pt="Pesquisa" data-en="Research">Pesquisa</h3>
+                        <p data-pt="Analiso o mercado, concorrência e tendências do seu nicho." data-en="I analyze the market, competition and trends in your niche.">Analiso o mercado, concorrência e tendências do seu nicho.</p>
+                    </div>
+                </div>
+                <div class="processo-step reveal-up" style="--delay: 0.3s">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="fas fa-magic"></i></div>
+                    <div class="step-content">
+                        <h3 data-pt="Criação" data-en="Creation">Criação</h3>
+                        <p data-pt="Desenvolvo conceitos e propostas visuais únicas." data-en="I develop unique concepts and visual proposals.">Desenvolvo conceitos e propostas visuais únicas.</p>
+                    </div>
+                </div>
+                <div class="processo-step reveal-up" style="--delay: 0.4s">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="step-content">
+                        <h3 data-pt="Entrega" data-en="Delivery">Entrega</h3>
+                        <p data-pt="Refinamos juntos e entrego todos os arquivos finais." data-en="We refine together and I deliver all the final files.">Refinamos juntos e entrego todos os arquivos finais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content reveal-up">
+                <span class="cta-emoji">🍋</span>
+                <h2><span data-pt="Vamos criar algo" data-en="Let's create something">Vamos criar algo</span> <span class="highlight" data-pt="incrível" data-en="amazing">incrível</span> <span data-pt="juntos?" data-en="together?">juntos?</span></h2>
+                <p data-pt="Seu próximo projeto merece um design que faça a diferença. Vamos conversar!" data-en="Your next project deserves a design that makes a difference. Let's talk!">Seu próximo projeto merece um design que faça a diferença. Vamos conversar!</p>
+                <a href="https://wa.me/5511995630759?text=Ola%20Endrew!%20Vim%20pelo%20seu%20portfolio%20e%20quero%20iniciar%20um%20projeto.%20Podemos%20conversar?" target="_blank" class="btn-primary btn-large">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-pt="Iniciar Projeto no WhatsApp" data-en="Start Project on WhatsApp">Iniciar Projeto no WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">📬 <span data-pt="Fale comigo" data-en="Contact me">Fale comigo</span></span>
+                <h2 class="section-title reveal-up" data-pt="Contato" data-en="Contact">Contato</h2>
+                <div class="title-line reveal-up"></div>
+            </div>
+            <div class="contato-grid">
+                <div class="contato-info reveal-left">
+                    <h3 data-pt="Vamos conversar!" data-en="Let's talk!">Vamos conversar!</h3>
+                    <p data-pt="Estou pronto para transformar suas ideias em realidade visual. Entre em contato e vamos começar!" data-en="I'm ready to turn your ideas into visual reality. Get in touch and let's get started!">Estou pronto para transformar suas ideias em realidade visual. Entre em contato e vamos começar!</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:endrew.designers1@gmail.com" style="color: var(--text-muted); transition: var(--transition);">endrew.designers1@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <a href="https://wa.me/5511995630759?text=Ola%20Endrew!" target="_blank" style="color: var(--text-muted); transition: var(--transition);">(11) 99563-0759</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fab fa-instagram"></i></div>
+                            <div>
+                                <strong>Instagram</strong>
+                                <a href="https://instagram.com/endrew_proshop" target="_blank" style="color: var(--text-muted); transition: var(--transition);">@endrew_proshop</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://instagram.com/endrew_proshop" target="_blank" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5511995630759?text=Ola%20Endrew!" target="_blank" class="social-link social-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:endrew.designers1@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contato-form" id="contactForm">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="formNome" data-pt-placeholder="Seu nome" data-en-placeholder="Your name" placeholder="Seu nome" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="formEmail" data-pt-placeholder="Seu email" data-en-placeholder="Your email" placeholder="Seu email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-tag"></i>
+                            <select id="formServico" required>
+                                <option value="" disabled selected data-pt="Tipo de serviço" data-en="Type of service">Tipo de serviço</option>
+                                <option value="Identidade Visual" data-pt="Identidade Visual" data-en="Visual Identity">Identidade Visual</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Embalagem" data-pt="Embalagem" data-en="Packaging">Embalagem</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="Material Impresso" data-pt="Material Impresso" data-en="Print Material">Material Impresso</option>
+                                <option value="Motion Graphics">Motion Graphics</option>
+                                <option value="Outro" data-pt="Outro" data-en="Other">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper textarea-wrapper">
+                            <i class="fas fa-comment-dots"></i>
+                            <textarea id="formMensagem" data-pt-placeholder="Conte-me sobre seu projeto..." data-en-placeholder="Tell me about your project..." placeholder="Conte-me sobre seu projeto..." rows="5" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-pt="Enviar pelo WhatsApp" data-en="Send via WhatsApp">Enviar pelo WhatsApp</span>
+                        <div class="btn-shine"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🍋</span>
+                    <span class="logo-text">ENDREW<span class="highlight">DESIGNER</span></span>
+                    <p data-pt="Design gráfico com sabor e personalidade." data-en="Graphic design with flavor and personality.">Design gráfico com sabor e personalidade.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" data-pt="Início" data-en="Home">Início</a>
+                    <a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a>
+                    <a href="#portfolio" data-pt="Portfólio" data-en="Portfolio">Portfólio</a>
+                    <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/endrew_proshop" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5511995630759?text=Ola%20Endrew!" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:endrew.designers1@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-pt="© 2024 EndrewDesigner. Feito com 🍋 e muito ☕" data-en="© 2024 EndrewDesigner. Made with 🍋 and lots of ☕">© 2024 EndrewDesigner. Feito com 🍋 e muito ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT BUTTON -->
+    <a href="https://wa.me/5511995630759?text=Ola%20Endrew!%20Vim%20pelo%20seu%20portfolio%20e%20gostaria%20de%20conversar!" target="_blank" class="whatsapp-float" id="whatsappFloat" title="Fale comigo no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-pulse"></span>
+    </a>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
